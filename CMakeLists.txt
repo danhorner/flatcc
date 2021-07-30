@@ -172,7 +172,6 @@ message(STATUS "lib install dir ${dist_dir}/${lib_dir}")
 if (CMAKE_C_COMPILER_ID MATCHES "Clang")
     # Clang or AppleClang
     message(STATUS "Setting Clang compiler options")
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wstrict-prototypes")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wsign-conversion")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wconversion")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -pedantic -Wall -Wextra")
